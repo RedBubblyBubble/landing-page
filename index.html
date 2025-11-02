@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SCAN 3D - Solution de scan 3D de pointe pour vos projets">
+    <title>SCAN 3D - Scan 3D Professionnel</title>
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L4 8V16C4 23.728 9.373 30.658 16 32C22.627 30.658 28 23.728 28 16V8L16 2Z" fill="currentColor"/>
+                        <path d="M16 8L20 10V14L16 16L12 14V10L16 8Z" fill="white"/>
+                    </svg>
+                    <span>SCAN 3D</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-secondary">Connexion</button>
+                    <button class="btn-primary">Démarrer</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Nouvelle génération de scan 3D</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">SCAN 3D</span><br>
+                    Transformez le réel en virtuel
+                </h1>
+                <p class="hero-subtitle">
+                    Solution professionnelle de scan 3D haute précision. 
+                    Capturez, analysez et visualisez vos objets en 3D avec une qualité exceptionnelle.
+                </p>
+                <div class="hero-cta-group">
+                    <button class="btn-hero-primary">Commencer gratuitement</button>
+                    <button class="btn-hero-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM9 6V14L14 10L9 6Z"/>
+                        </svg>
+                        Voir la démo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Scans réalisés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Précision</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Disponible</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="scan-preview">
+                    <img src="images/hero-3d-scan.svg" alt="SCAN 3D Preview" class="hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="scan-preview-fallback" style="display: none;">
+                        <div class="scan-frame"></div>
+                        <div class="scan-lines"></div>
+                        <div class="scan-points"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Fonctionnalités</span>
+                <h2 class="section-title">Tout ce dont vous avez besoin</h2>
+                <p class="section-subtitle">
+                    Une suite complète d'outils pour vos projets de scan 3D
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L8 12V24C8 32.836 13.163 40.673 24 44C34.837 40.673 40 32.836 40 24V12L24 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="24" cy="18" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Haute Précision</h3>
+                    <p>Technologie avancée pour une précision au micromètre. Capturez les moindres détails de vos objets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 24L24 28L28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Rendu Rapide</h3>
+                    <p>Algorithme optimisé pour un traitement ultra-rapide. Obtenez vos résultats en quelques minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 12V36M12 24H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Export Multi-format</h3>
+                    <p>Exportez vos scans dans tous les formats standards : OBJ, STL, PLY, et bien plus.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L32 16L24 24L16 16L24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 24L32 32L24 40L16 32L24 24Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Collaboration Cloud</h3>
+                    <p>Partagez et collaborez sur vos projets en temps réel avec votre équipe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="12" y="16" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M20 16V12C20 10.895 20.895 10 22 10H26C27.105 10 28 10.895 28 12V16" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Interface Intuitive</h3>
+                    <p>Design moderne et ergonomique. Facile à prendre en main, même pour les débutants.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 16V24L30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Support 24/7</h3>
+                    <p>Notre équipe est disponible à tout moment pour vous accompagner dans vos projets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Galerie</span>
+                <h2 class="section-title">Exemples de scans</h2>
+                <p class="section-subtitle">
+                    Découvrez la qualité exceptionnelle de nos scans 3D
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/model-architectural.svg" alt="Modèle architectural" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="placeholder-3d model-1" style="display: none;"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Modèle architectural</h4>
+                        <p>Résolution: 0.1mm</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/model-industriel.svg" alt="Objet industriel" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="placeholder-3d model-2" style="display: none;"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Objet industriel</h4>
+                        <p>Résolution: 0.05mm</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/model-artistique.svg" alt="Sculpture artistique" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="placeholder-3d model-3" style="display: none;"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Sculpture artistique</h4>
+                        <p>Résolution: 0.2mm</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="images/model-mecanique.svg" alt="Pièce mécanique" class="gallery-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="placeholder-3d model-4" style="display: none;"></div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Pièce mécanique</h4>
+                        <p>Résolution: 0.08mm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-badge">À propos</span>
+                    <h2 class="section-title">La technologie au service de l'innovation</h2>
+                    <p class="about-description">
+                        SCAN 3D révolutionne la façon dont vous capturez et visualisez le monde en trois dimensions. 
+                        Notre plateforme combine intelligence artificielle et technologie de pointe pour offrir des 
+                        résultats d'une précision exceptionnelle.
+                    </p>
+                    <p class="about-description">
+                        Que vous soyez architecte, ingénieur, artiste ou entrepreneur, SCAN 3D vous offre les 
+                        outils nécessaires pour transformer vos idées en réalité numérique.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="check-icon">✓</div>
+                            <span>Technologie brevetée</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="check-icon">✓</div>
+                            <span>Équipe d'experts</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="check-icon">✓</div>
+                            <span>Support premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">AI</div>
+                        <div class="tech-item">Cloud</div>
+                        <div class="tech-item">3D</div>
+                        <div class="tech-item">ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à commencer ?</h2>
+                <p>Rejoignez des milliers d'utilisateurs satisfaits et transformez vos projets avec SCAN 3D</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta-primary">Essai gratuit 14 jours</button>
+                    <button class="btn-cta-secondary">Contacter l'équipe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-badge">Contact</span>
+                    <h2 class="section-title">Parlons de votre projet</h2>
+                    <p class="contact-description">
+                        Notre équipe est là pour répondre à toutes vos questions et vous aider 
+                        à trouver la solution parfaite pour vos besoins.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>contact@scan3d.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Adresse</strong>
+                                <p>Paris, France</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jean@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Information sur vos services" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2L4 8V16C4 23.728 9.373 30.658 16 32C22.627 30.658 28 23.728 28 16V8L16 2Z" fill="currentColor"/>
+                            <path d="M16 8L20 10V14L16 16L12 14V10L16 8Z" fill="white"/>
+                        </svg>
+                        <span>SCAN 3D</span>
+                    </div>
+                    <p>La solution professionnelle de scan 3D pour vos projets.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produit</h4>
+                        <ul>
+                            <li><a href="#features">Fonctionnalités</a></li>
+                            <li><a href="#gallery">Galerie</a></li>
+                            <li><a href="#">Tarifs</a></li>
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Carrières</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Aide</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Tutoriels</a></li>
+                            <li><a href="#">Statut</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SCAN 3D. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
