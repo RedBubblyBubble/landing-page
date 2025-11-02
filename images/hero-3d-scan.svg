@@ -1,0 +1,24 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#heroGradient)" opacity="0.1"/>
+  <g transform="translate(100, 100)">
+    <g transform="rotate(-15 100 100)">
+      <path d="M100 50L150 87.5V187.5L100 225L50 187.5V87.5L100 50Z" fill="none" stroke="#6366f1" stroke-width="3"/>
+      <path d="M150 87.5L200 125V225L150 262.5L100 225V187.5L150 150L150 87.5Z" fill="none" stroke="#6366f1" stroke-width="3"/>
+      <path d="M100 225L150 262.5L100 300L50 262.5L100 225Z" fill="none" stroke="#6366f1" stroke-width="3"/>
+      <circle cx="100" cy="137.5" r="4" fill="#6366f1"/>
+      <circle cx="125" cy="112.5" r="4" fill="#6366f1"/>
+      <circle cx="125" cy="162.5" r="4" fill="#6366f1"/>
+    </g>
+    <line x1="50" y1="100" x2="250" y2="100" stroke="#6366f1" stroke-width="2" stroke-dasharray="5 5" opacity="0.5"/>
+    <line x1="50" y1="50" x2="250" y2="50" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5 5" opacity="0.4"/>
+    <line x1="50" y1="150" x2="250" y2="150" stroke="#ec4899" stroke-width="2" stroke-dasharray="5 5" opacity="0.4"/>
+  </g>
+  <text x="200" y="320" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="bold" fill="#6366f1" text-anchor="middle" opacity="0.6">3D SCAN</text>
+</svg>
